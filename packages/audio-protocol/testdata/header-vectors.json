@@ -1,0 +1,29 @@
+{
+  "description": "Cross-language header vectors. Multi-byte fields are big-endian.",
+  "cases": [
+    {
+      "name": "empty_ping",
+      "packetType": 4,
+      "sequence": 0,
+      "timestamp": "0",
+      "payloadHex": "",
+      "frameHex": "414901040000000000000000000000000000"
+    },
+    {
+      "name": "start_48k_mono_opus",
+      "packetType": 1,
+      "sequence": 1,
+      "timestamp": "1710000000000",
+      "payloadHex": "0000bb80011400007d0001",
+      "frameHex": "41490101000000010000018e23f14c00000b0000bb80011400007d0001"
+    },
+    {
+      "name": "audio_tiny",
+      "packetType": 2,
+      "sequence": 42,
+      "timestamp": "1710000000020",
+      "payloadHex": "deadbeef",
+      "frameHex": "414901020000002a0000018e23f14c140004deadbeef"
+    }
+  ]
+}

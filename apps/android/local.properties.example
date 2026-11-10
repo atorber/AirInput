@@ -1,0 +1,2 @@
+## Copy to local.properties (gitignored) or rely on ANDROID_HOME / ANDROID_SDK_ROOT.
+sdk.dir=/opt/homebrew/share/android-commandlinetools

@@ -1,0 +1,18 @@
+{
+  "name": "airinput",
+  "private": true,
+  "version": "0.1.0",
+  "description": "AirInput — Android phone as Bluetooth HID + RFCOMM wireless mic for Windows/macOS",
+  "packageManager": "pnpm@10.6.4",
+  "scripts": {
+    "build": "pnpm -r --filter './packages/*' --filter './apps/desktop' run build",
+    "test": "pnpm -r --filter './packages/*' --filter './apps/desktop' run test",
+    "dev:desktop": "pnpm --filter @airinput/desktop dev",
+    "lint": "pnpm -r --filter './packages/*' --filter './apps/desktop' run lint --if-present",
+    "protocol:test": "pnpm --filter @airinput/audio-protocol test",
+    "shared:test": "pnpm --filter @airinput/shared test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@airinput/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AirInput desktop shell (Electron + Vue 3)",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build && tsc -p tsconfig.electron.json",
+    "test": "vitest run",
+    "lint": "vue-tsc --noEmit && tsc -p tsconfig.electron.json --noEmit",
+    "start": "electron ."
+  },
+  "dependencies": {
+    "@airinput/audio-protocol": "workspace:*",
+    "@airinput/shared": "workspace:*",
+    "pinia": "^3.0.1",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "electron": "^35.0.0",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.2",
+    "vitest": "^3.0.9",
+    "vue-tsc": "^2.2.8"
+  }
+}
